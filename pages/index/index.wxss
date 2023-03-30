@@ -1,5 +1,17 @@
-/**index.wxss**/
-.text {
-    color: skyblue;
-    font-size: 100rpx;
-}
+.adPositionIndexPop {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .adPositionIndexPop image {
+    width: 420rpx;
+  }
+  .adPositionIndexPop .close {
+    margin-top: 32rpx;
+  }
+  .pingtuantag {
+    margin-left: 16rpx;
+  }

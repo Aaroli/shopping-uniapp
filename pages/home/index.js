@@ -4,12 +4,12 @@
  * @Author: AaroLi
  * @Date: 2023-03-06 11:09:27
  * @LastEditors: AaroLi
- * @LastEditTime: 2023-03-30 15:58:42
+ * @LastEditTime: 2023-03-30 17:10:23
  */
 let times = null;
 const dayjs = require('dayjs')
 const WXAPI = require('apifm-wxapi')
-const mallName = wx.getStorageSync('mallName')  //获取登录信息如果登录信息为null 跳转到login页
+const mallName = wx.getStorageSync('userName')  //获取登录信息如果登录信息为null 跳转到login页
 
 Page({
   /**

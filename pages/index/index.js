@@ -1,17 +1,26 @@
+/*
+ * @Description: 
+ * @Version: 1.0
+ * @Author: AaroLi
+ * @Date: 2023-03-06 10:58:16
+ * @LastEditors: AaroLi
+ * @LastEditTime: 2023-03-30 17:23:57
+ */
+const WXAPI = require('apifm-wxapi')
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        list: [1, 2, 3, 4, 5]
+        adPositionIndexPop: ""
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        this.adPosition()
     },
 
     /**
@@ -61,7 +70,18 @@ Page({
     onShareAppMessage: function () {
 
     },
-    btn1() {
-
+    async adPosition() {
+        let res = await WXAPI.adPosition('indexPop')
+        console.log('res', res);
+        if (res.code == 0) {
+            this.setData({
+                adPositionIndexPop: res.data
+            })
+        }
+    },
+    closeAdPositionIndexPop() {
+        this.setData({
+            adPositionIndexPop: null
+        })
     }
 })

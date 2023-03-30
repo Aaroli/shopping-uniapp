@@ -1,5 +1,7 @@
-<!-- index.wxml -->
-<view class="container">
-  <!-- 引入自定义组件 index.json 要引 -->
-  <hooks-list list="{{list}}" />
-</view>
+<!-- 活动页弹窗 -->
+<van-overlay show="{{ adPositionIndexPop }}">
+  <view class="adPositionIndexPop">
+    <image src="{{ adPositionIndexPop.val }}" mode="widthFix" bindtap="clickAdPositionIndexPop"></image>
+    <van-icon custom-class="close" name="close" size="64rpx" color="#fff" bind:click="closeAdPositionIndexPop" />
+  </view>
+</van-overlay>
