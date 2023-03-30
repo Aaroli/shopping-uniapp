@@ -1,0 +1,22 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="text">list页面</view>
+  <view class="text">{{msg}}</view>
+  <view class="{{vid}}">{{msg}}</view>
+  <view>列表</view>
+  <!-- 默认： item 循环单个数据  index: 获取当前的下标 -->
+  <view wx:for="{{list}}" wx:key="index">
+    <view>{{item.name}}</view>
+    <view wx:if="{{item.id >= 2}}">唱跳</view>
+    <view wx:else>music</view>
+    <!-- 内层循环 -->
+    <!-- 自定义内层循环  wx:for-item="arrItem" wx:for-index="arrid" -->
+    <view wx:for="{{item.arry}}" wx:for-item="arrItem" wx:for-index="arrid" wx:key="arrid">
+      内层循环
+    </view>
+  </view>
+  <!-- 点击事件 bind  传参格式必须data-xxx -->
+  <button bindtap="handleClick" data-id="100">点击事件</button>
+  <!-- 点击跳转 -->
+  <button bindtap="jump">点击跳转</button>
+</view>

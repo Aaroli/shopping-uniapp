@@ -1,0 +1,5 @@
+<!-- index.wxml -->
+<view class="container">
+  <!-- 引入自定义组件 index.json 要引 -->
+  <hooks-list list="{{list}}" />
+</view>

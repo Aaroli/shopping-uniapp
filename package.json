@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.14",
+    "apifm-wxapi": "^3.62.0",
+    "dayjs": "^1.11.7"
+  }
+}

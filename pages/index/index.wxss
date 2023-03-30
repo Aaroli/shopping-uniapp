@@ -1,0 +1,5 @@
+/**index.wxss**/
+.text {
+    color: skyblue;
+    font-size: 100rpx;
+}

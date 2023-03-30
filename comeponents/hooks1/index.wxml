@@ -1,0 +1,5 @@
+<!-- index -->
+<text>我是组件1</text>
+<!-- 直接就能用 -->
+<view>{{list}}</view>
+<button class="btn" type="primary" bindtap="onTap">子点击事件</button>

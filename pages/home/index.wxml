@@ -1,0 +1,15 @@
+<!-- index.wxml -->
+<view class="countent">
+    <!-- 倒计时 -->
+    <view class="num">
+        <view class="num_right" bindtap="handleClickTbaberbar">
+            <view>{{count}}</view>
+            <view>跳过</view>
+        </view>
+    </view>
+    <swiper class="swiper_box" indicator-dots="true" indicator-active-color="#fff">
+        <swiper-item wx:for="{{banners}}" wx:key="id">
+            <image mode="aspectFill" bindtap="imgClick" src="{{item.picUrl}}" />
+        </swiper-item>
+    </swiper>
+</view>

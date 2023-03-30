@@ -1,0 +1,37 @@
+/**index.wxss**/
+.countent {
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+.num {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.num_right {
+    display: flex;
+    background-color: #d6d6d6;
+    border-radius: 30rpx;
+    padding: 13rpx 28rpx;
+    color: #fff;
+    font-size: 28rpx;
+    margin:35rpx 35rpx 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+swiper {
+    width: 100vw;
+    height: 100vh;
+  }
+  swiper-item {
+    width: 100vw;
+    height: 100vh;
+  }
+  image {
+    width: 100vw;
+    height: 100vh;
+  }
