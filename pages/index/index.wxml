@@ -1,3 +1,14 @@
+<!-- 自定义胶囊 导航条 json文件也要设置  "navigationStyle": "custom" 否则位置不对 -->
+<van-sticky>
+  <view class="search-container">
+    <view class="search" style="height:{{navHeight}}px;padding-top:{{navTop}}px">
+      <view class="search-title" style="height:{{navHeight-navTop-5}}px;line-height:{{navHeight-navTop-5}}px;width:{{132/52*(navHeight-navTop-5)}}px;">
+        {{mallName}}
+      </view>
+      <input placeholder-class="search-placeholder" style="width:{{menuButtonObject.left-18-((132/52)*(navHeight-navTop-5))}}px" type="text" placeholder="输入关键词搜索" disabled value="{{name}}" bindtap="goSearch"></input>
+    </view>
+  </view>
+</van-sticky>
 <!-- 活动页弹窗 -->
 <van-overlay show="{{ adPositionIndexPop }}">
   <view class="adPositionIndexPop">

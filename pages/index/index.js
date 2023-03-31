@@ -4,9 +4,10 @@
  * @Author: AaroLi
  * @Date: 2023-03-06 10:58:16
  * @LastEditors: AaroLi
- * @LastEditTime: 2023-03-30 17:23:57
+ * @LastEditTime: 2023-03-31 17:41:29
  */
 const WXAPI = require('apifm-wxapi')
+const APP = getApp()
 Page({
 
     /**
@@ -33,7 +34,13 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        this.setData({
+            navHeight: APP.globalData.navHeight,
+            navTop: APP.globalData.navTop,
+            windowHeight: APP.globalData.windowHeight,
+            menuButtonObject: APP.globalData.menuButtonObject, //小程序胶囊信息
+            mallName: wx.getStorageSync('userName')
+        })
     },
 
     /**
