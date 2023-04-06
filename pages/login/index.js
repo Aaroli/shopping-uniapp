@@ -8,12 +8,16 @@ Page({
 
   },
   onReady: function () {
+    /*
+    cosnt that = this 这个操作跟vue同理 就是wx.xxxx之类的api 拿不到this 所做的骚操作
+    */
+    const that = this
     wx.getUserInfo({
       success: function (res) {
+        that.setData({ userName: res.userInfo.nickName })
         wx.setStorageSync('userName', res.userInfo.nickName)
       }
     })
-    this.setData({ userName: wx.getStorageSync('userName') })
   },
   getUserProfile(e) {
     //弹窗获取用户信息  只能通过点击的方式调用

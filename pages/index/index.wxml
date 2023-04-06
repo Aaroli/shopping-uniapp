@@ -9,6 +9,19 @@
     </view>
   </view>
 </van-sticky>
+<!-- 紧贴自定义导航条下边的 导航组件  navigator -->
+<navigator wx:if="{{shopInfo}}" url="/pages/shop/select">
+  <view class="shops-container">
+    <view class="l">
+      <image src="/images/order-details/icon-address.png"></image>
+      <text>{{shopInfo.name}}</text>
+    </view>
+    <view class="r">
+      <text>切换门店</text>
+      <image src="/images/icon/next.png"></image>
+    </view>
+  </view>
+</navigator>
 <!-- 活动页弹窗 -->
 <van-overlay show="{{ adPositionIndexPop }}">
   <view class="adPositionIndexPop">

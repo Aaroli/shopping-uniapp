@@ -9,8 +9,15 @@
     "miniprogram": {
       "list": [
         {
-          "name": "登录",
-          "pathName": "pages/home/index",
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "登录测试",
+          "pathName": "pages/login/index",
           "query": "",
           "launchMode": "default",
           "scene": null

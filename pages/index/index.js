@@ -4,7 +4,7 @@
  * @Author: AaroLi
  * @Date: 2023-03-06 10:58:16
  * @LastEditors: AaroLi
- * @LastEditTime: 2023-03-31 17:41:29
+ * @LastEditTime: 2023-04-06 15:28:17
  */
 const WXAPI = require('apifm-wxapi')
 const APP = getApp()
@@ -90,5 +90,11 @@ Page({
         this.setData({
             adPositionIndexPop: null
         })
-    }
+    },
+    // 跳转到搜索页
+    goSearch(){
+        wx.navigateTo({
+          url: '/pages/search/index'
+        })
+      },
 })
